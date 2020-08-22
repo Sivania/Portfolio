@@ -5,14 +5,16 @@ class MainBlock extends React.Component
 {
     render() { 
         return (
-            <div className="mainBlock">
-                This is a main block {this.GreetingMessage()}
-            </div>
+            <section className="MainBlockMainContent" id="Home">
+                <div className="Welcome"> {this.GreetingMessage()}, I am Emil </div>
+                <div className="Introduction">Danish Software Engineering Student</div>
+            </section>
         )
     }
 
     GreetingMessage(){
-        const hours = Date.getHours;
+        var d = new Date();
+        var hours = d.getHours();
         if (hours > 16)
             return "Good evening"
         else if (hours > 12)
@@ -20,7 +22,5 @@ class MainBlock extends React.Component
         return "Good morning"
     }
 }
-
-
 
 export default MainBlock;

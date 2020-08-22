@@ -1,44 +1,50 @@
 import React from "react";
 import './AboutBlock.css';
 
-import AboutBlockView from "./AboutBlockView"
+import BlockHeader from "../BlockHeader"
+import AboutBlockEntry from "./AboutBlockEntry"
 
+const maxPages = 7;
 class AboutBlock extends React.Component {
-    constructor() {
-        super();
-        this.state = {
-          showingPage: 0
+  constructor() {
+    super();
+    this.state = {
+    showingPage: 0
+  }
+this.showNextPage = this.showNextPage.bind(this);
+this.showPrevPage = this.showPrevPage.bind(this);
+}
+  render() { 
+      return (
+        <section id="About">
+          <BlockHeader color={"#d591ee"}title={"About"} describtion={"My past, present and future"} />
+          <section className="aboutBlockMainContent">
+                  <button className="aboutBlockMainContentNextButton" onClick={this.showPrevPage}>{"<"}</button>
+                    <div className="aboutBlockMainContentArticle">
+                        <AboutBlockEntry id={this.state.showingPage}/>
+                      <div className="pageNum">{this.state.showingPage + 1} / {maxPages}</div>
+                    </div>
+                  <button className="aboutBlockMainContentPrevButton" onClick={this.showNextPage}>{">"}</button>
+          </section>
+        </section>
+      )
+    }
+  showNextPage() {
+    this.setState(prevstate => {
+        const NewShowingPageId = (prevstate.showingPage + 1) % maxPages
+        return {
+            showingPage: NewShowingPageId
         }
-        this.showPage = this.showPage.bind(this);
-        this.showNextPage = this.showNextPage.bind(this);
-    }
-    showNextPage() {
-        const numOfPages = 7 //Number of pages in the rotation
+    })
+  }
 
-        this.setState(prevstate => {
-            const NewShowingPageId = (prevstate.showingPage + 1) % numOfPages
-            return {
-                showingPage: NewShowingPageId
-            }
-        })
-    }
-
-    showPage(event, pageId) {
-        this.setState({ showingPage: pageId })
-    }
-
-    render() { 
-        return (
-            <div className="aboutBlock">
-                <AboutBlockView showingPage={this.state.showingPage}/>
-                <button onClick={this.showNextPage}>Show next page</button>
-                <button onClick={(e) => {this.showPage(e, 0)}}>Show 0</button>
-                <button onClick={(e) => {this.showPage(e, 1)}}>Show 1</button>
-                <button onClick={(e) => {this.showPage(e, 2)}}>Show 2</button>
-                <button onClick={(e) => {this.showPage(e, 3)}}>Show 3</button>
-                This is a about block
-            </div>
-        )
-    }
+  showPrevPage() {
+    this.setState(prevstate => {
+        const NewShowingPageId = (prevstate.showingPage + 7 - 1 ) % maxPages
+        return {
+            showingPage: NewShowingPageId
+        }
+    })
+  }
 }
 export default AboutBlock;

@@ -1,0 +1,65 @@
+.AboutEntry{
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    margin-left: 120px;
+    margin-right: 120px;
+    justify-content: space-between;
+}
+
+.AboutArticle{
+    width: 45%;
+    margin-top: 100px;
+}
+
+.AboutTitle{
+    font-size: 40px;
+    font-family: Rowdies, sans-serif;
+}
+
+.AboutText{
+    margin-top: 25px;
+    font-size: 20px;
+    font-family: roboto;
+}
+
+.AboutImage{
+    width: 350px;
+    height: 350px;
+    float: right;
+    align-self: center;
+}
+@media only screen and (max-width: 1080px) {
+    .AboutEntry{
+        margin-left: 55px;
+        margin-right: 55px;
+    }
+}
+@media only screen and (max-width: 750px) {
+    .AboutArticle{
+        margin-bottom: 25px;
+        width: 100%;
+        margin-top: 50px;
+    }
+    .AboutImage{
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        width: 250px;
+        height: 250px;
+        align-self: flex-end;
+        margin-bottom: 60px;
+    }
+    .AboutTitle{
+        font-size: 30px;
+        font-family: Rowdies, sans-serif;
+    }
+
+    .AboutText{
+        margin-top: 25px;
+        font-size: 15px;
+        font-family: roboto;
+        margin-bottom: 0px;
+    }
+}

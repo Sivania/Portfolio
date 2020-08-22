@@ -1,17 +1,18 @@
 import React from "react";
 import './ProjectBlock.css';
-
-import Project from "./Project";
+import BlockHeader from "../BlockHeader"
+import ProjectEntry from "./ProjectEntry"
 class ProjectBlock extends React.Component
 {
     render() { 
         return (
-            <div className="projectBlock">
-                This is a project block
-                <div className="projects">
-                    <Project name="Project1" describtion="fwafawf"/>
-                </div>
-            </div>
+            <section id="Projects">
+                <BlockHeader color={"#19c9d1"} title={"Projects"} describtion={"My best projects"} />
+                    <section className="projectBlockMainContent">
+                        <ProjectEntry id={0} />
+                        <ProjectEntry id={1} />
+                    </section>
+            </section>
         )
     }
 }

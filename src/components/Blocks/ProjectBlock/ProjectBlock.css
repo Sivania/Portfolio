@@ -1,3 +1,7 @@
-.projectBlock{
-    background-color: rgb(139, 30, 85);
+.projectBlockMainContent{
+    width: 100%;
+    background-color: #9bdadd;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }

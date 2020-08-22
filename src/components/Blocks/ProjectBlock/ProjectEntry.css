@@ -1,0 +1,88 @@
+.ProjectEntry{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 80%;
+    border: black solid 4px ;
+    border-radius: 20px;
+    justify-content: space-between;
+    padding: 2%;
+}
+.ProjectText{
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 30px;
+}
+.ProjectImage{
+    width: 45%;
+    height: 45%;
+    align-self: center;
+}
+
+.ProjectTitle{
+    text-align: center;
+    font-size: 30px;
+    font-family: Rowdies, sans-serif;
+}
+
+.ProjectArticle{
+    width: 50%;
+}
+
+.ProjectButtons{
+    display: flex;
+    justify-content: center;
+}
+
+.ProjectButton{
+    width: 200px;
+    height: 75px;
+    background-color: gray;
+    margin: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 400;
+    border-radius: 20px;
+    border: none;
+    align-self: flex-end;
+    outline: none;
+}
+
+.ProjectButton:hover {
+    box-shadow: 0 5px 10px  #19c9d1;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1080px) {
+    .ProjectArticle{
+        width: 100%;
+    }
+
+    .ProjectEntry{
+        justify-content: center;
+    }
+
+    .ProjectImage{
+        width: 65%;
+        height: 65%;
+    }
+
+}
+
+@media only screen and (max-width: 750px) {
+    .ProjectEntry{
+        width: 90%;
+    }
+
+    .ProjectButton{
+        width: 120px;
+        height: 50px;
+        margin: 10px;
+        font-size: 18px;
+    }
+}

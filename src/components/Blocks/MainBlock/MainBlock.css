@@ -1,3 +1,21 @@
-.mainBlock{
-    background-color: rgb(83, 159, 194);
+.MainBlockMainContent{
+    height: 100vh;
+    background-color: #568cb6;
+}
+
+.Welcome {
+    padding-top: 25vh;
+    padding-left: 10vw;
+    color: rgb(5, 5, 5);
+    font-size: 50px;
+    font-weight: 500;
+    border-radius: 20px;
+}
+
+.Introduction{
+    padding-left: 20vw;
+    color: #000000;
+    font-size: 40px;
+    font-weight: 500;
+    border-radius: 20px;
 }

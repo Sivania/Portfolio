@@ -1,0 +1,36 @@
+.blockHeader{
+    height: 220px;
+
+}
+
+.blockHeaderTitle{
+    padding-top: 60px;
+    text-align: center;
+    font-family: Rowdies, sans-serif;
+    font-size: 60px;
+}
+
+.blockHeaderDescribtion{
+    text-align: center;
+    font-family: Rowdies, sans-serif;
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 1080px) {
+    .blockHeaderTitle{
+        font-size: 50px;
+    }
+    .blockHeaderDescribtion{
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .blockHeaderTitle{
+        font-size: 45px;
+    }
+    .blockHeaderDescribtion{
+        font-size: 30px;
+    }
+}
+

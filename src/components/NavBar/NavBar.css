@@ -1,3 +1,67 @@
-.navBar{
-    background-color: gray;
+.NavBar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: gray;
+}
+
+.NavBar li {
+    width: 20%;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 800;
+  }
+
+.NavBar a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: white;
+  }
+
+.NavBar a:hover {
+    background: #1565C0;
+}
+
+.Icon{
+  display: none;
+}
+
+.Icon:hover{
+  cursor: pointer;
+}
+
+.BurgerIcon{
+  width: 25px;
+  height: 25px;
+}
+
+
+@media all and (max-width: 750px) {
+  .NavBar {
+    flex-direction: column;
+    }
+  .NavBar li {
+      width: 100%;
+    }
+  .Icon{
+    display: inline;
+  }
+  .Hide{
+    display: none;
+  }
+  .Show{
+    display: block;
+  }
+  .BurgerIcon{
+    width: 16px;
+    height: 16px;
+  }
 }
