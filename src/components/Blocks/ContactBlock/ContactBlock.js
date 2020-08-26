@@ -7,10 +7,11 @@ class ContactBlock extends React.Component
 {
     render() { 
         return (
-          <section id="About">
-            <BlockHeader color={"#eeeeee"}title={"Contact"} describtion={"Reach out to me"} />
+          <section id="Contact">
+            <BlockHeader color={"#b6ac9e"}title={"Contact"} describtion={"Interested in my work?"} />
             <section className="ContactBlockMainContent">
-                <button><a href="mailto:EmilWW@hotmail.dk">Link text</a></button>
+                <p className="ContactText">Reach out to me on my email below or by the social links in the bottom</p>
+                <p className="ContactEmail">My e-mail: emilww@hotmail.dk</p>
             </section>
           </section>
         )

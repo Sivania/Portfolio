@@ -9,13 +9,14 @@
     position: fixed;
     top: 0;
     width: 100%;
-    background: gray;
+    background-color: rgb(50, 50, 50);
 }
 
 .NavBar li {
     width: 20%;
+    font-family: Rowdies;
     text-align: center;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 800;
   }
 
@@ -26,10 +27,17 @@
     color: white;
   }
 
-.NavBar a:hover {
-    background: #1565C0;
+.Blue:hover {
+  background: #19c9d1;
 }
 
+.Pink:hover {
+  background: #d591ee;
+}
+
+.Beige:hover{
+  background: #b6ac9e;
+}
 .Icon{
   display: none;
 }
@@ -37,12 +45,6 @@
 .Icon:hover{
   cursor: pointer;
 }
-
-.BurgerIcon{
-  width: 25px;
-  height: 25px;
-}
-
 
 @media all and (max-width: 750px) {
   .NavBar {
@@ -61,7 +63,7 @@
     display: block;
   }
   .BurgerIcon{
-    width: 16px;
-    height: 16px;
+    width: 25px;
+    height: 20px;
   }
 }

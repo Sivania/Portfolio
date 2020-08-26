@@ -1,6 +1,6 @@
 import React from "react"
 import "./ProjectEntry.css"
-import GitHub from "..\\..\\Images\\GitHub-Mark-32px.png"
+import portfolioProject from "./portfolioProject.png"
 
 class ProjectEntry extends React.Component
 {
@@ -14,11 +14,11 @@ class ProjectEntry extends React.Component
         let githubLink
         if (this.props.id === 0){
             title = "Personal Portfolio Website"
-            intro = "You are currently looking at my portfolio website project"
+            intro = "You are currently looking at my portfolio website project."
             goal = "The goal of this project was to make a responsive portfolio showcasing my best projects and personality. This way, employers and collaborators will get a glimpse of who I am and my capabilities. I also wanted to learn about web development and web design to be able to make websites for the world to see."
             result = "The result is a colorful personal responsive website that can be shown on most devices and able to be expanded upon to hold additional content. I learned about basic HTML, CSS and Javascript development in React and responsive web design."
             technologies = "Built with HTML, CSS and Javascript in React."
-            img = "https://pictureofday.files.wordpress.com/2009/01/nasar3107_1000x10001.jpg"
+            img = portfolioProject
             githubLink = "https://github.com/Sivania/Portfolio"
         }
         else if (this.props.id === 1){

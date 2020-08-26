@@ -1,6 +1,7 @@
 import React from "react";
 import './NavBar.css';
-import BurgerIcon from "..\\Images\\BurgerIcon.png"
+import BurgerIcon from "./burger.png"
+import PDF from '../../Resume.pdf';
 
 class NavBar extends React.Component
 {
@@ -16,11 +17,11 @@ class NavBar extends React.Component
     return (
             <nav>
                 <ul class="NavBar">
-                    <li className={this.state.toggleNavBar}><a href="#Home">HOME</a></li>
-                    <li className={this.state.toggleNavBar}><a href="#Projects">PROJECTS</a></li>
-                    <li className={this.state.toggleNavBar}><a href="#About">ABOUT</a></li>
-                    <li className={this.state.toggleNavBar}><a href="#Contact">CONTACT</a></li>
-                    <li className={this.state.toggleNavBar}><a href="Resume.pdf" target="_blank">RESUME</a></li>
+                    <li className={this.state.toggleNavBar}><a className="Blue" href="#Home">HOME</a></li>
+                    <li className={this.state.toggleNavBar}><a className="Pink" href="#Projects">PROJECTS</a></li>
+                    <li className={this.state.toggleNavBar}><a className="Beige" href="#About">ABOUT</a></li>
+                    <li className={this.state.toggleNavBar}><a className="Pink" href="#Contact">CONTACT</a></li>
+                    <li className={this.state.toggleNavBar}><a className="Blue" href={PDF} target="_blank">RESUME</a></li>
                     <li className="Icon"><a onClick={this.toggleNavBar}><img className="BurgerIcon" src={BurgerIcon}/></a></li>
                 </ul>
             </nav>

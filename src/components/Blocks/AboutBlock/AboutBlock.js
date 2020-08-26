@@ -20,10 +20,10 @@ this.showPrevPage = this.showPrevPage.bind(this);
           <BlockHeader color={"#d591ee"}title={"About"} describtion={"My past, present and future"} />
           <section className="aboutBlockMainContent">
                   <button className="aboutBlockMainContentNextButton" onClick={this.showPrevPage}>{"<"}</button>
-                    <div className="aboutBlockMainContentArticle">
-                        <AboutBlockEntry id={this.state.showingPage}/>
-                      <div className="pageNum">{this.state.showingPage + 1} / {maxPages}</div>
-                    </div>
+                  <div className="aboutBlockMainContentArticle">
+                      <AboutBlockEntry id={this.state.showingPage}/>
+                    <div className="pageNum">{this.state.showingPage + 1} / {maxPages}</div>
+                  </div>
                   <button className="aboutBlockMainContentPrevButton" onClick={this.showNextPage}>{">"}</button>
           </section>
         </section>

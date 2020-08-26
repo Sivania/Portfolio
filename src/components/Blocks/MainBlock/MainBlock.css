@@ -1,21 +1,125 @@
 .MainBlockMainContent{
     height: 100vh;
-    background-color: #568cb6;
+    background-image: url('../../Images/main2.jpg');
+    background-repeat: no-repeat;
+    background-size: 1980px 1080px;
+    background-position-x: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    min-height: 600px;
 }
 
-.Welcome {
+.MainTop{
+    width: 100%;
+}
+
+.Welcome0{
     padding-top: 25vh;
-    padding-left: 10vw;
-    color: rgb(5, 5, 5);
-    font-size: 50px;
+    padding-left: 100px;
+    color: #9bdadd;
+    font-size: 80px;
     font-weight: 500;
-    border-radius: 20px;
+    margin-right: 10px;
 }
 
-.Introduction{
-    padding-left: 20vw;
-    color: #000000;
+.Welcome1{
+    padding-left: 200px;
+    color: #d6b2e4;
+    font-size: 60px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.MainBottom{
+    width: 100%;
+    align-self: bottom;
+    display: flex;
+    justify-self: center;
+    flex-wrap: wrap;
+}
+
+.Welcome2{
+    color: #dad0c0;
     font-size: 40px;
     font-weight: 500;
-    border-radius: 20px;
+    width: 100%;
+    text-align: center;
+    align-self: flex-end;
+    margin-bottom: 2vh;
+    margin-right: 10px;
+}
+
+.Arrow{
+    background: url(singleArrow.png);
+    width: 40px;
+    height: 40px;
+    background-size: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: flex-end;
+    animation-name: ArrowAnimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    margin-bottom: 4vh;
+    background-repeat: no-repeat;
+}
+
+.Arrow:hover{
+    background: url(doubleArrow.jpg);
+    width: 40px;
+    height: 40px;
+    background-size: 100%;
+    cursor: pointer;
+}
+
+
+@media all and (max-width: 1080px) {
+    .Welcome0{
+        padding-top: 35vh;
+        font-size: 50px;
+    }
+
+    .Welcome1{
+        font-size: 40px;
+    }
+
+    .Welcome2{
+        font-size: 30px;
+    }
+}
+
+@media all and (max-width: 750px) {
+    .Welcome0{
+        padding-left: 0px;
+        padding-top: 30vh;
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .Welcome1{
+        font-size: 30px;
+        padding-left: 0px;
+        padding-top: 5vh;
+        text-align: center;
+    }
+
+    .Welcome2{
+        font-size: 30px;
+    }
+}
+
+@keyframes ArrowAnimation {
+    from {background: url(singleArrow.png);
+        width: 40px;
+        height: 40px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    to {background: url(doubleArrow.jpg);
+        width: 40px;
+        height: 40px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
 }
