@@ -2,12 +2,11 @@
     height: 100vh;
     background-image: url('../../Images/main2.jpg');
     background-repeat: no-repeat;
-    background-size: 1980px 1080px;
+    background-size: auto 100vh;
     background-position-x: center;
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
-    min-height: 600px;
 }
 
 .MainTop{
@@ -16,17 +15,17 @@
 
 .Welcome0{
     padding-top: 25vh;
-    padding-left: 100px;
+    padding-left: 5vw;
     color: #9bdadd;
-    font-size: 80px;
+    font-size: 10vh;
     font-weight: 500;
     margin-right: 10px;
 }
 
 .Welcome1{
-    padding-left: 200px;
+    padding-left: 8vw;
     color: #d6b2e4;
-    font-size: 60px;
+    font-size: 8vh;
     font-weight: 500;
     margin-right: 10px;
 }
@@ -41,19 +40,18 @@
 
 .Welcome2{
     color: #dad0c0;
-    font-size: 40px;
+    font-size: 5vh;
     font-weight: 500;
     width: 100%;
     text-align: center;
     align-self: flex-end;
     margin-bottom: 2vh;
-    margin-right: 10px;
 }
 
 .Arrow{
     background: url(singleArrow.png);
-    width: 40px;
-    height: 40px;
+    width: 4vh;
+    height: 4vh;
     background-size: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -111,14 +109,14 @@
 
 @keyframes ArrowAnimation {
     from {background: url(singleArrow.png);
-        width: 40px;
-        height: 40px;
+        width: 4vh;
+        height: 4vh;
         background-size: 100%;
         background-repeat: no-repeat;
     }
     to {background: url(doubleArrow.jpg);
-        width: 40px;
-        height: 40px;
+        width: 4vh;
+        height: 4vh;
         background-size: 100%;
         background-repeat: no-repeat;
     }

@@ -1,33 +1,33 @@
 .Footer{
     background-color: rgb(50, 50, 50);
     display:flex;
+    padding-bottom: 15vh;
 }
 
 .FooterSection{
     width: 50%;
     display:flex;
     flex-wrap: wrap;
-    margin-left: 250px;
-    margin-top: 60px;
-    margin-bottom: 150px;
+    margin-left: 15vw;
+    margin-top: 10vh;
 }
 
 .FooterTitle{
     list-style-type: none;
     width: 100%;
     font-family: Rowdies;
-    font-size: 17px;
+    font-size: 2.5vh;
     color: white;
     font-weight: 200;
 }
 
 .FooterItem{
-    margin-top: 5px;
+    margin-top: 1vh;
     width: 100%;
     display:flex;
     color: gray;
     font-family: roboto;
-    font-size: 17px;
+    font-size: 2.5vh;
 }
 
 .FooterLink:focus:visited:hover:active{

@@ -33,9 +33,9 @@ class ProjectEntry extends React.Component
 
         return (
             <div className={"ProjectEntry"}>
+                <div className="ProjectTitle">{title}</div>
                 <div className={"ProjectArticle"}>
-                    <div>
-                        <div className="ProjectTitle">{title}</div>
+                    <div className={"ProjectTextBox"}>
                         <div className="ProjectText">{intro}</div>
                         <div className="ProjectText">{goal}</div>
                         <div className="ProjectText">{result}</div>
@@ -44,10 +44,10 @@ class ProjectEntry extends React.Component
                             <button href="Resume.pdf" className="ProjectButton">GitHub</button>
                             <button className="ProjectButton">Video </button>
                         </div>
-
                     </div>
+                    <img className="ProjectImage" src={img}/>
                 </div>
-                <img className="ProjectImage" src={img}/>
+
             </div>
         )
     }

@@ -3,11 +3,7 @@
   padding: 0;
 }
 
-body{
-  overflow-y: auto;
-}
-
 html{
   scroll-behavior: smooth;
-  overflow-x: hidden;
+
 }

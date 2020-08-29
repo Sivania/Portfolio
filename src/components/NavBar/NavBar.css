@@ -16,7 +16,7 @@
     width: 20%;
     font-family: Rowdies;
     text-align: center;
-    font-size: 17px;
+    font-size: 2vh;
     font-weight: 800;
   }
 
@@ -65,5 +65,11 @@
   .BurgerIcon{
     width: 25px;
     height: 20px;
+  }
+}
+
+@media all and (max-height: 600px) {
+  .NavBar li {
+    font-size: 17px;
   }
 }

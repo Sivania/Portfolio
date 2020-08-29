@@ -1,19 +1,19 @@
 .blockHeader{
-    height: 220px;
+    height: 30vh;
 
 }
 
 .blockHeaderTitle{
-    padding-top: 60px;
+    padding-top: 7vh;
     text-align: center;
     font-family: Rowdies, sans-serif;
-    font-size: 60px;
+    font-size: 8vh;
 }
 
 .blockHeaderDescribtion{
     text-align: center;
     font-family: Rowdies, sans-serif;
-    font-size: 30px;
+    font-size: 4vh;
 }
 
 @media only screen and (max-width: 1080px) {
